@@ -1,0 +1,19 @@
+{
+  "name": "vapeur",
+  "version": "1.0.0",
+  "description": "**Vapeur Project** is a web application designed to manage video game collections, drawing inspiration from **Steam**, whose name also translates to \"vapor.\" Just as steam powers machinery, **Vapeur** aims to fuel efficient organization and navigation of your games. With this project, users can classify, browse, edit, and enrich their game collections in a user-friendly and structured interface.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.0.1",
+    "express": "^4.21.1",
+    "prisma": "^6.0.1",
+    "sqlite3": "^5.1.7"
+  }
+}
