@@ -1,6 +1,4 @@
-<<<<<<< Updated upstream
-=======
-### ============================================ **ENGLISH README.md**
+### **ENGLISH README.md**
 
    # **Vapeur**
 
@@ -107,7 +105,7 @@
 
 
 
-### ============================================ FRENCH README.md 
+### FRENCH README.md 
 
    # **Vapeur**
 
@@ -191,9 +189,3 @@
    | `npx prisma generate`             | Générer le client Prisma.                                   |
    | `npm install @prisma/client`      | Installer Prisma Client.                                    |
    | `node server.js`                  | Lancer le serveur Express.js.                               |
-
-
-
-
->>>>>>> Stashed changes
-
