@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liste des Jeux - Vapeur</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  {{> header}}
+
+  <main>
+    <h1>Liste des jeux</h1>
+    <ul>
+      {{#each games}}
+        <li>
+          <h3>{{this.title}}</h3>
+          <p>{{this.description}}</p>
+          <p>Date de sortie : {{this.releaseDate}}</p>
+          <p>Genre : {{this.genre.name}}</p>
+          <p>Éditeur : {{this.editor.name}}</p>
+        </li>
+      {{/each}}
+    </ul>
+  </main>
+
+  {{> footer}}
+</body>
+</html>
