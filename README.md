@@ -189,6 +189,9 @@ vapeur/
 └── package-lock.json                     # Dependency lock file
 ```
 
+---
+---
+
 ### **README.md FRANÇAIS**
 
 # **Vapeur**
