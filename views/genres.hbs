@@ -1,0 +1,16 @@
+{{> header}}
+
+<main>
+  <h2>Genre Management</h2>
+  <form action="/genres" method="POST">
+    <input type="text" name="name" placeholder="Genre Name" required />
+    <button type="submit">Add Genre</button>
+  </form>
+  <ul>
+    {{#each genres}}
+      <li>{{this.name}}</li>
+    {{/each}}
+  </ul>
+</main>
+
+{{> footer}}

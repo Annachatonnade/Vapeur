@@ -155,38 +155,38 @@ Handlebars is a templating engine used for generating dynamic HTML pages. It all
 ```
 vapeur/
 ├── prisma/
-│   ├── schema.prisma        # Database schema with Prisma
+│   ├── schema.prisma                     # Database schema with Prisma
 ├── public/
 │   ├── css/
-│   │   └── style.css        # CSS files for styling
-│   ├── images/              # Images for games, genres, editors
+│   │   └── style.css                     # CSS files for styling
+│   ├── images/                           # Images for games, genres, editors
 │   ├── js/
-│       └── script.js        # Front-end scripts (if needed)
+│       └── script.js                     # Front-end scripts (if needed)
 ├── views/
 │   ├── layouts/
-│   │   └── main.hbs         # Main layout for Handlebars
+│   │   └── main.hbs                      # Main layout for Handlebars
 │   ├── partials/
-│   │   ├── header.hbs       # Common header for all pages
-│   │   └── footer.hbs       # Common footer for all pages
-│   ├── index.hbs            # Homepage (featured games list)
-│   ├── games.hbs            # Game management page
-│   ├── genres.hbs           # Genre management page
-│   └── editors.hbs          # Editor management page
+│   │   ├── header.hbs                    # Common header for all pages
+│   │   └── footer.hbs                    # Common footer for all pages
+│   ├── index.hbs                         # Homepage (featured games list)
+│   ├── games.hbs                         # Game management page
+│   ├── genres.hbs                        # Genre management page
+│   └── editors.hbs                       # Editor management page
 ├── src/
 │   ├── routes/
-│   │   ├── games.js         # Routes for game management
-│   │   ├── genres.js        # Routes for genre management
-│   │   └── editors.js       # Routes for editor management
+│   │   ├── games.js                      # Routes for game management
+│   │   ├── genres.js                     # Routes for genre management
+│   │   └── editors.js                    # Routes for editor management
 │   ├── controllers/
-│   │   ├── gamesController.js  # Game business logic
-│   │   ├── genresController.js # Genre business logic
-│   │   └── editorsController.js# Editor business logic
-│   └── server.js            # Application entry point
-├── .env                     # Environment variables (DB URL, etc.)
-├── .gitignore               # Files to ignore in Git
-├── README.md                # Project documentation
-├── package.json             # Node.js dependencies
-└── package-lock.json        # Dependency lock file
+│   │   ├── gamesController.js            # Game business logic
+│   │   ├── genresController.js           # Genre business logic
+│   │   └── editorsController.js          # Editor business logic
+│   └── server.js                         # Application entry point
+├── .env                                  # Environment variables (DB URL, etc.)
+├── .gitignore                            # Files to ignore in Git
+├── README.md                             # Project documentation
+├── package.json                          # Node.js dependencies
+└── package-lock.json                     # Dependency lock file
 
 ### **README.md FRANÇAIS**
 
@@ -340,40 +340,40 @@ Handlebars est un moteur de templates utilisé pour générer des pages HTML dyn
 
 ---
 
-### **Site Structure**
+### **Structure du Site**
 
 ```
 vapeur/
 ├── prisma/
-│   ├── schema.prisma        # Database schema with Prisma
+│   ├── schema.prisma                     # Schéma de base de données avec Prisma
 ├── public/
 │   ├── css/
-│   │   └── style.css        # CSS files for styling
-│   ├── images/              # Images for games, genres, editors
+│   │   └── style.css                     # Fichiers CSS pour le style
+│   ├── images/                           # Images pour les jeux, genres, éditeurs
 │   ├── js/
-│       └── script.js        # Front-end scripts (if needed)
+│       └── script.js                     # Scripts front-end (si nécessaire)
 ├── views/
 │   ├── layouts/
-│   │   └── main.hbs         # Main layout for Handlebars
+│   │   └── main.hbs                      # Mise en page principale pour Handlebars
 │   ├── partials/
-│   │   ├── header.hbs       # Common header for all pages
-│   │   └── footer.hbs       # Common footer for all pages
-│   ├── index.hbs            # Homepage (featured games list)
-│   ├── games.hbs            # Game management page
-│   ├── genres.hbs           # Genre management page
-│   └── editors.hbs          # Editor management page
+│   │   ├── header.hbs                    # En-tête commun pour toutes les pages
+│   │   └── footer.hbs                    # Pied de page commun pour toutes les pages
+│   ├── index.hbs                         # Page d'accueil (liste des jeux en vedette)
+│   ├── games.hbs                         # Page de gestion des jeux
+│   ├── genres.hbs                        # Page de gestion des genres
+│   └── editors.hbs                       # Page de gestion des éditeurs
 ├── src/
 │   ├── routes/
-│   │   ├── games.js         # Routes for game management
-│   │   ├── genres.js        # Routes for genre management
-│   │   └── editors.js       # Routes for editor management
+│   │   ├── games.js                      # Routes pour la gestion des jeux
+│   │   ├── genres.js                     # Routes pour la gestion des genres
+│   │   └── editors.js                    # Routes pour la gestion des éditeurs
 │   ├── controllers/
-│   │   ├── gamesController.js  # Game business logic
-│   │   ├── genresController.js # Genre business logic
-│   │   └── editorsController.js# Editor business logic
-│   └── server.js            # Application entry point
-├── .env                     # Environment variables (DB URL, etc.)
-├── .gitignore               # Files to ignore in Git
-├── README.md                # Project documentation
-├── package.json             # Node.js dependencies
-└── package-lock.json        # Dependency lock file
+│   │   ├── gamesController.js            # Logique métier pour les jeux
+│   │   ├── genresController.js           # Logique métier pour les genres
+│   │   └── editorsController.js          # Logique métier pour les éditeurs
+│   └── server.js                         # Point d'entrée de l'application
+├── .env                                  # Variables d'environnement (URL DB, etc.)
+├── .gitignore                            # Fichiers à ignorer par Git
+├── README.md                             # Documentation du projet
+├── package.json                          # Dépendances Node.js
+└── package-lock.json                     # Fichier de verrouillage des dépendances
