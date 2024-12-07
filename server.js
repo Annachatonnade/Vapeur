@@ -1,20 +1,27 @@
 const express = require('express');
-const exphbs = require('express-handlebars');
 const path = require('path');
+const hbs = require('hbs');
+const bodyParser = require('body-parser');
+const gamesRoutes = require('./routes/games');
+const genresRoutes = require('./routes/genres');
+const editorsRoutes = require('./routes/editors');
 
 const app = express();
+const port = 3000;
 
-// Configuration de Handlebars
-app.engine('hbs', exphbs.engine({ extname: '.hbs' }));
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, '../views'));
-
-// Middleware pour les fichiers statiques
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '../public')));
 
-// Routes
-const gamesRoutes = require('./routes/games');
 app.use('/games', gamesRoutes);
+app.use('/genres', genresRoutes);
+app.use('/editors', editorsRoutes);
 
-const PORT = 3000;
-app.listen(PORT, () => console.log(`Serveur en cours d'exécution sur http://localhost:${PORT}`));
+app.get('/', (req, res) => {
+  res.render('index', { title: 'Home' });
+});
+
+app.listen(port, () => {
+  console.log(`Server running on http://localhost:${port}`);
+});
