@@ -187,6 +187,7 @@ vapeur/
 ├── README.md                             # Project documentation
 ├── package.json                          # Node.js dependencies
 └── package-lock.json                     # Dependency lock file
+```
 
 ### **README.md FRANÇAIS**
 
@@ -377,3 +378,4 @@ vapeur/
 ├── README.md                             # Documentation du projet
 ├── package.json                          # Dépendances Node.js
 └── package-lock.json                     # Fichier de verrouillage des dépendances
+```
